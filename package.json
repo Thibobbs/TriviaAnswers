@@ -1,0 +1,26 @@
+{
+    "name": "trivia",
+    "version": "1.0.0",
+    "description": "trivia cheat game",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@google-cloud/vision": "^0.14.0",
+        "axios": "^0.17.1",
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "fs": "^0.0.1-security",
+        "http": "^0.0.0",
+        "nodemon": "^1.14.11",
+        "request": "^2.83.0",
+        "request-promise": "^4.2.2",
+        "socket.io": "^2.0.4"
+    },
+    "scripts": {
+        "start": "nodemon index.js --exec babel-node --inspect",
+        "server": "nodemon index.js --exec babel-node"
+    }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<input type="file" class="input" accept="image/png"><br><br>
+<img src="" alt="Screenshot" class="currentImage" height="100">
+<div class="container">
+  <div class="timer">
+      <h2>0</h2>
+      <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+       <g>
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="7" stroke="#56C896" fill="none"/>
+       </g>
+      </svg>
+  </div>
+  <div class="question">
+    Question?
+  </div>
+  <ul class="answers">
+    <li class="answer">
+      <div class="answer__border"></div>
+      <div class="answer__progress">
+        <div class="progress__fill"></div>
+      </div>
+      <div class="answer__text">
+        Answer 1
+      </div>
+      <div class="answer__count">
+        0%
+      </div>
+      <div class="answer__select">
+        <button class="select__button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M17,17H4.2c-0.3,0-0.6,0.3-0.6,0.6v4.8c0,0.3,0.3,0.6,0.6,0.6H17v12.8c0,0.3,0.3,0.6,0.6,0.6h4.8c0.3,0,0.6-0.3,0.6-0.6 V23h12.8c0.3,0,0.6-0.3,0.6-0.6v-4.8c0-0.3-0.3-0.6-0.6-0.6H23V4.2c0-0.3-0.3-0.6-0.6-0.6h-4.8c-0.3,0-0.6,0.3-0.6,0.6V17L17,17z"/></svg>
+        </button>
+        <div class="select__count">0</div>
+      </div>
+    </li>
+    <li class="answer">
+      <div class="answer__border"></div>
+      <div class="answer__progress">
+        <div class="progress__fill"></div>
+      </div>
+      <div class="answer__text">
+        Answer 2
+      </div>
+      <div class="answer__count">
+        0%
+      </div>
+      <div class="answer__select">
+        <button class="select__button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M17,17H4.2c-0.3,0-0.6,0.3-0.6,0.6v4.8c0,0.3,0.3,0.6,0.6,0.6H17v12.8c0,0.3,0.3,0.6,0.6,0.6h4.8c0.3,0,0.6-0.3,0.6-0.6 V23h12.8c0.3,0,0.6-0.3,0.6-0.6v-4.8c0-0.3-0.3-0.6-0.6-0.6H23V4.2c0-0.3-0.3-0.6-0.6-0.6h-4.8c-0.3,0-0.6,0.3-0.6,0.6V17L17,17z"/></svg>
+        </button>
+        <div class="select__count">0</div>
+      </div>
+    </li>
+    <li class="answer">
+      <div class="answer__border"></div>
+      <div class="answer__progress">
+        <div class="progress__fill"></div>
+      </div>
+      <div class="answer__text">
+        Answer 3
+      </div>
+      <div class="answer__count">
+        0%
+      </div>
+      <div class="answer__select">
+        <button class="select__button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M17,17H4.2c-0.3,0-0.6,0.3-0.6,0.6v4.8c0,0.3,0.3,0.6,0.6,0.6H17v12.8c0,0.3,0.3,0.6,0.6,0.6h4.8c0.3,0,0.6-0.3,0.6-0.6 V23h12.8c0.3,0,0.6-0.3,0.6-0.6v-4.8c0-0.3-0.3-0.6-0.6-0.6H23V4.2c0-0.3-0.3-0.6-0.6-0.6h-4.8c-0.3,0-0.6,0.3-0.6,0.6V17L17,17z"/></svg>
+        </button>
+        <div class="select__count">0</div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div id="negative">
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./assets/js/front.js"></script>
+<script src="./assets/js/image.js"></script>
+<script src="./assets/js/select.js"></script>
+<script src="./assets/js/results.js"></script>
+</body>
+</html>
